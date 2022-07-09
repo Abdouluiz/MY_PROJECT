@@ -1,0 +1,77 @@
+   .footer {
+    text-align: center;
+    padding: 6px;
+    background-color: orangered;
+    color: white;
+    padding-bottom: 6rem;
+    
+  }
+
+  .iconn{
+    display: flex;
+    padding: 15px 0;
+    padding-left: 42.1rem;
+}
+.iconn li{
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+.iconn li i{
+    font-size: 26px;
+    opacity: 0.8;
+}
+.iconn li i:hover{
+    color: #C850C0;
+    cursor: pointer;
+}
+
+.creator{
+    padding-left: 48rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="footer">
+            <p>WELCOME TO OUR SYSTEM<br>
+            
+            <ul class = "iconn">
+              <li>
+                  <i class = "fa fa-twitter"></i>
+              </li>
+              <li>
+                  <i class = "fa fa-facebook"></i>
+              </li>
+              <li>
+                  <i class = "fa fa-instagram"></i>
+              </li>
+              <li>
+                <i class = "fa fa-skype"></i>
+            </li>
+            <li>
+              <i class = "fa fa-whatsapp"></i>
+          </li>
+          <li>
+            <i class = "fa fa-google"></i>
+        </li>
+        <li>
+          <i class = "fa fa-snapchat"></i>
+      </li>
+          </ul>
+
+
+              </div>    
+              <div class="creator">
+                <p>created by ASHRAF</p>
+              </div>
+        </div>

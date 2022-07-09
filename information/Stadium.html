@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="form/amani.html">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stadiums</title>
+    <link rel="icon" type="image/x-icon" href="../image/z.png">
+</head>
+
+<style>
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(8, 13, 66);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.GFG {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+        }
+*
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+}
+
+footer{
+  width: 100%;
+  height: 160px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #0f0808;
+}
+.topic1{
+  text-align: left;
+}
+
+footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+
+footer .bottom a{
+  color: #0921f78e;
+  
+}
+footer .bottom a:hover{
+  color: #cf1616ea;
+}
+
+footer .content .media-icons a{
+  font-size: 26px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.topic{
+  text-align: right;
+  color: white;
+  padding-right: 40px;`
+  
+  padding-bottom: 1px;
+}
+.media-icons{
+  text-align: right;
+  padding-bottom: 14px;
+  
+}
+
+.content .media-icons a:hover{
+  border-color: #eb2f06;
+}
+.content .right{
+  margin-top: 14px;
+}
+    
+</style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-light">
+        
+    <div class="container-fluid">
+        <img src="../image/z.png" width="70" height="70">
+        
+        <a class="navbar-brand" routerLink=""><b>ZFA</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <!-- navbar items go to right side -->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" a href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            League
+          </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" routerLink="/mission" routerLinkActive="active-link">Premiem</a></li>
+                        <li><a class="dropdown-item" routerLink="/vission" routerLinkActive="active-link">Division 1</a></li>
+    
+                        <li><a class="dropdown-item" routerLink="/vission" routerLinkActive="active-link">Juvernile</a></li>
+                        <li><a class="dropdown-item" routerLink="/vission" routerLinkActive="active-link">Centeral</a></li>
+                      
+                        <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Information
+          </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" routerLink="/mission" routerLinkActive="active-link">Teams</a></li>
+                        <li><a class="dropdown-item" routerLink="/vission" routerLinkActive="active-link"a href="">Players</a></li>
+                        <li><a class="dropdown-item" routerLink="/vission" routerLinkActive="active-link"a href="refferes.html">Referees</a></li>
+                        <li><a class="dropdown-item" routerLink="/vission" routerLinkActive="active-link"a href="../information/Stadium.html">Stadiums</a></li>
+                      
+                        <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                    </ul>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="about" routerLinkActive="active-link"a href="../contant.html">Contact</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="about" routerLinkActive="active-link"a href="../about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="about" routerLinkActive="active-link"a href="../about.html">Sign In</a>
+                </li>
+               
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<hr>
+<center>
+  <h4><b>STADIUMS</b></h4>
+</center>
+<hr>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="../image/b.JPG" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>MAU ZE DONG</h2>
+        <p><b>Capacity :</b> 27000 <b</p>
+        <p><b>Location :</b> Mjini</p>
+        <p><b>Distric  :</b> Mjini Magharib </p>
+        <p><b>Surface  :</b> Artificial</p>
+
+      
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="../image/o.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>KWA MKAPA</h2>
+        <p><b>Capacity :</b> 55000 <b</p>
+        <p><b>Location :</b> Dar-es salaam</p>
+        <p><b>Distric  :</b> Mjini Magharib </p>
+        <p><b>Surface  :</b> Artificial</p>
+       
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="../image/b.JPG" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>AMANI STADIUM</h2>
+        <p><b>Capacity :</b> 27000 <b</p>
+        <p><b>Location :</b> Kwa Wazee</p>
+        <p><b>Distric  :</b> Mjini Magharib </p>
+        <p><b>Surface  :</b> Artificial</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="../image/d.webp" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p><b>Capacity :</b> 27000 <b</p>
+        <p><b>Location :</b> Kwa Wazee</p>
+        <p><b>Distric  :</b> Mjini Magharib </p>
+        <p><b>Surface  :</b> Artificial</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="../image/d.webp" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p><b>Capacity :</b> 27000 <b</p>
+        <p><b>Location :</b> Kwa Wazee</p>
+        <p><b>Distric  :</b> Mjini Magharib </p>
+        <p><b>Surface  :</b> Artificial</p>
+       
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="../image/gom.JPG" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2><center>GOMBANI</center> </h2>
+        
+        
+        <p><b>Capacity :</b> 17000 <b</p>
+        
+        <p><b>Location :</b> Pemba</p>
+        <p><b>Distric  :</b> Mjini Magharib </p>
+        <p><b>Surface  :</b> Artificial</p>
+       
+      </div>
+    </div>
+  </div>
+  
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<footer>
+  <div class="content">
+    
+    <div class="right box">
+      <div class="topic">Subscribe us</div>
+      <div class="media-icons">
+       <a href="#"><i class="fab fa-facebook-f"></i></a>
+       <a href="#"><i class="fab fa-instagram"></i></a>
+       <a href="#"><i class="fab fa-whatsapp"></i></a>
+       <a href="#"><i class="fab fa-youtube"></i></a>   
+     </div>
+     
+    </div>
+
+  </div>  
+    <div class="bottom">
+      <p>Copyright © 2020 <a href="#">Abdou Luiz Football Trainer</a> All rights reserved</p>
+    </div>
+</footer>
+ 
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

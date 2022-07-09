@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    background-color: black;
+}
+
+.table-header p {
+    color: rgb(42, 20, 235);
+}
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+}
+
+td button:nth-child(1) {
+    background-color: blue;
+    width: 50px;
+}
+
+td button:nth-child(2) {
+    background-color: red;
+    width: 50px;
+}
+
+.addnew {
+    padding: 15px;
+    color: white;
+    background-color: blue;
+}
+
+.back {
+    padding: 15px;
+    color: white;
+    background-color: blue;
+}
+
+input {
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+    border: 1px solid blue;
+    outline: none;
+    color: blue;
+}
+
+.table-section {
+    height: 500px;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    min-width: 900px;
+    border-collapse: collapse;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: aliceblue;
+    color: rgb(13, 14, 14);
+    font-size: 15px;
+}
+
+th,
+td {
+    border-bottom: 1px solid wheat;
+    padding: 10px;
+    word-break: break-all;
+    text-align: center;
+}
+
+td img {
+    height: 60px;
+    width: 50px;
+    object-fit: cover;
+}
+
+tr:hover td {
+    color: blue;
+    cursor: pointer;
+    background-color: azure;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul li a {
+    list-style: none;
+    list-style-type: none;
+}
